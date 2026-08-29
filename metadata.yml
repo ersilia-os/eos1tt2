@@ -2,36 +2,40 @@ Identifier: eos1tt2
 Slug: mole-embeddings
 Status: In progress
 Title: MolE molecular embeddings
-Description: MolE, Recursion's foundation model for molecular graphs, learns embeddings
-  using a transformer with disentangled attention adapted from DeBERTa. Pretraining first
-  predicts each atom's local environment in a self-supervised step, then refines embeddings
-  on ~456,000 ChEMBL compounds across 1310 bioactivity tasks. The original study
-  self-supervised on up to 842 million molecules and showed finetuned MolE topped 10 of 22
-  ADMET benchmarks from the Therapeutic Data Commons. Since Recursion never released those
-  full weights, Ersilia instead serves the smaller GuacaMol/ChEMBL-pretrained checkpoint.
+Description: MolE, Recursions foundation model for molecular graphs, learns 
+  embeddings using a transformer with disentangled attention adapted from 
+  DeBERTa. Pretraining first predicts each atoms local environment in a 
+  self-supervised step, then refines embeddings on ~456,000 ChEMBL compounds 
+  across 1310 bioactivity tasks. The original study self-supervised on up to 842
+  million molecules and showed finetuned MolE topped 10 of 22 ADMET benchmarks 
+  from the Therapeutic Data Commons. Since Recursion never released those full 
+  weights, Ersilia instead serves the smaller GuacaMol/ChEMBL-pretrained 
+  checkpoint.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Representation
 Subtask: Featurization
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Value
+  - Value
 Output Dimension: 768
 Output Consistency: Fixed
-Interpretation: 768-dimensional vector encoding a molecule's structure and biological information learned during MolE pretraining.
+Interpretation: 768-dimensional vector encoding a molecules structure and 
+  biological information learned during MolE pretraining.
 Tag:
-- Embedding
-- Chemical graph model
+  - Embedding
+  - Chemical graph model
 Biomedical Area:
-- Any
+  - Any
 Target Organism:
-- Any
+  - Any
 Publication Type: Peer reviewed
 Publication Year: 2024
 Publication: https://doi.org/10.1038/s41467-024-53751-y
 Source Code: https://github.com/recursionpharma/mole_public
 License: Non-commercial
+Incorporation Date: '2025-06-23'
