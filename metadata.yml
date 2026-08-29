@@ -1,6 +1,6 @@
 Identifier: eos1tt2
 Slug: mole-embeddings
-Status: In progress
+Status: Ready
 Title: MolE molecular embeddings
 Description: MolE, Recursions foundation model for molecular graphs, learns 
   embeddings using a transformer with disentangled attention adapted from 
@@ -39,6 +39,16 @@ Publication: https://doi.org/10.1038/s41467-024-53751-y
 Source Code: https://github.com/recursionpharma/mole_public
 License: Non-commercial
 Incorporation Date: '2025-06-23'
+Last Packaging Date: '2026-08-29'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1tt2.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos1tt2
+Docker Architecture: AMD64
 Model Size: 996.0
 Environment Size: 2633.0
+Image Size: 4556.49
+Computational Performance 1: 35.63
+Computational Performance 2: 29.48
+Computational Performance 3: 40.08
+Computational Performance 4: 163.75
+Computational Performance 5: 717.98
