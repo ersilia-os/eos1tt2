@@ -2,46 +2,36 @@ Identifier: eos1tt2
 Slug: mole-embeddings
 Status: In progress
 Title: MolE molecular embeddings
-Description: MolE is a foundation model for chemistry developed by Recursion. It combines
-  geometric deep learning with transformers, to learn a meaningful representation
-  of molecules. MolE leverages extensive labeled and unlabeled datasets in two pretraining
-  steps. First it follows a novel self-supervised strategy using the graph representation
-  of ~842 million molecules designed to properly learn to represent chemical structures.
-  It is followed by a massive multi-task training to assimilate biological information.
+Description: MolE, Recursion's foundation model for molecular graphs, learns embeddings
+  using a transformer with disentangled attention adapted from DeBERTa. Pretraining first
+  predicts each atom's local environment in a self-supervised step, then refines embeddings
+  on ~456,000 ChEMBL compounds across 1310 bioactivity tasks. The original study
+  self-supervised on up to 842 million molecules and showed finetuned MolE topped 10 of 22
+  ADMET benchmarks from the Therapeutic Data Commons. Since Recursion never released those
+  full weights, Ersilia instead serves the smaller GuacaMol/ChEMBL-pretrained checkpoint.
 Deployment:
 - Local
-- Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Representation
+Subtask: Featurization
 Input:
 - Compound
 Input Dimension: 1
 Output:
 - Value
-- Score
-- Compound
-- Probability
-- Experimental value
-- '...'
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Dimension: 768
+Output Consistency: Fixed
+Interpretation: 768-dimensional vector encoding a molecule's structure and biological information learned during MolE pretraining.
 Tag:
 - Embedding
+- Chemical graph model
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+- Any
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
-Publication Year: 2025
+- Any
+Publication Type: Peer reviewed
+Publication Year: 2024
 Publication: https://doi.org/10.1038/s41467-024-53751-y
 Source Code: https://github.com/recursionpharma/mole_public
-License: MIT
-Publication: https://doi.org/10.1038/s41467-024-53751-y
+License: Non-commercial
