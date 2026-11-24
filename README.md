@@ -3,7 +3,7 @@
 MolE, Recursions foundation model for molecular graphs, learns embeddings using a transformer with disentangled attention adapted from DeBERTa. Pretraining first predicts each atoms local environment in a self-supervised step, then refines embeddings on ~456,000 ChEMBL compounds across 1310 bioactivity tasks. The original study self-supervised on up to 842 million molecules and showed finetuned MolE topped 10 of 22 ADMET benchmarks from the Therapeutic Data Commons. Since Recursion never released those full weights, Ersilia instead serves the smaller GuacaMol/ChEMBL-pretrained checkpoint.
 
 This model was incorporated on 2025-06-23.
-Last packaged on 2026-08-29.
+Last packaged on 2026-11-24.
 
 ## Information
 ### Identifiers
@@ -52,12 +52,12 @@ _10 of 768 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `996`
 - **Environment Size (Mb):** `2635`
-- **Image Size (Mb):** `4556.49`
+- **Image Size (Mb):** `1709.14`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.63`
-- 100 inputs: `40.08`
-- 10000 inputs: `717.98`
+- 10 inputs: `31.37`
+- 100 inputs: `26.51`
+- 10000 inputs: `461.94`
 
 ### References
 - **Source Code**: [https://github.com/recursionpharma/mole_public](https://github.com/recursionpharma/mole_public)
