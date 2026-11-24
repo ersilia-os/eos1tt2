@@ -40,7 +40,7 @@ Source Code: https://github.com/recursionpharma/mole_public
 License: Non-commercial
 Contributor: arnaucoma24
 Incorporation Date: '2025-06-23'
-Last Packaging Date: '2026-08-29'
+Last Packaging Date: '2026-11-24'
 Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1tt2.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos1tt2
@@ -48,9 +48,9 @@ Docker Architecture: AMD64
 Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos1tt2_v1.sif
 Model Size: 996.0
 Environment Size: 2635.0
-Image Size: 4556.49
-Computational Performance 1: 35.63
-Computational Performance 2: 29.48
-Computational Performance 3: 40.08
-Computational Performance 4: 163.75
-Computational Performance 5: 717.98
+Image Size: 1709.14
+Computational Performance 1: 31.37
+Computational Performance 2: 21.88
+Computational Performance 3: 26.51
+Computational Performance 4: 104.28
+Computational Performance 5: 461.94
