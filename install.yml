@@ -109,7 +109,7 @@ commands:
     - ["pip", "tqdm", "4.66.5"]
     - ["pip", "triton", "3.0.0"]
     - ["pip", "typer", "0.12.5"]
-    - ["pip", "typing-extensions", "4.12.2"]
+    - ["pip", "typing-extensions", "4.16.0"]
     - ["pip", "tzdata", "2024.2"]
     - ["pip", "ujson", "5.10.0"]
     - ["pip", "urllib3", "2.2.3"]
