@@ -47,7 +47,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos1tt2
 Docker Architecture: AMD64
 Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos1tt2_v1.sif
 Model Size: 996.0
-Environment Size: 2633.0
+Environment Size: 2635.0
 Image Size: 4556.49
 Computational Performance 1: 35.63
 Computational Performance 2: 29.48
