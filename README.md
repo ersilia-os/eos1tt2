@@ -64,7 +64,7 @@ _10 of 768 columns are shown_
 - **Publication**: [https://doi.org/10.1038/s41467-024-53751-y](https://doi.org/10.1038/s41467-024-53751-y)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2024`
-- **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
+- **Ersilia Contributor:** [arnaucoma24](https://github.com/arnaucoma24)
 
 ### License
 This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [Non-commercial](LICENSE) license.
